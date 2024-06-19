@@ -13,7 +13,7 @@
 
     COPY . .
 
-    CMD ["python", "app/main.py"]
+    CMD ["python","-m" "app.main"]
     ```
 
 2. **Build and Run Docker Container**:
