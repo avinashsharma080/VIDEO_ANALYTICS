@@ -1,6 +1,6 @@
 import schedule
 import time
-from app.youtube_api.py import fetch_video_details
+from app.youtube_api import fetch_video_details
 from app.data_processing import process_and_store_video_data
 
 def update_data():

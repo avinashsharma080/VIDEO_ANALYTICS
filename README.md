@@ -18,7 +18,7 @@
 
 4. **Run the Service**:
     ```sh
-    python app/main.py
+    python -m app.main
     ```
 
 ## Deployment
