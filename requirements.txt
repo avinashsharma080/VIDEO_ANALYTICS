@@ -6,3 +6,4 @@ schedule
 nltk
 flask_sqlalchemy
 requests
+ratelimit
