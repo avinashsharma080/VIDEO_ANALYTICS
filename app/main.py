@@ -1,6 +1,9 @@
 from app import app, db
 from app.scheduler import run_scheduler
-from flask import jsonify, request
+from flask import jsonify
+import logging
+
+logging.basicConfig(level=logging.INFO)
 
 @app.route('/videos', methods=['GET'])
 def get_videos():
@@ -22,8 +25,9 @@ def get_insights():
 
 if __name__ == "__main__":
     try:
-        db.create_all()
-        run_scheduler()
+        with app.app_context():
+            db.create_all()
+            run_scheduler()
         app.run(debug=True)
     except Exception as e:
         app.logger.error(f"Error starting the application: {e}")
