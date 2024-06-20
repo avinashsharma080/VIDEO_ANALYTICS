@@ -14,7 +14,7 @@
     ```
 
 3. **Configure Environment Variables**:
-    - Set `DATABASE_URL`, `YOUTUBE_API_KEY`, and `YOUTUBE_API_URL` in your environment. Also edit the channel ids with actual channel ids in `scheduler.py`
+    - Set `DATABASE_URL`, `YOUTUBE_API_KEY`, and `YOUTUBE_API_URL` in your environment, edit the channel ids with actual channel ids in `scheduler.py` and lastly set the ratelimit for api in `youtube_api.py`
 
 4. **Run the Service**:
     ```sh
