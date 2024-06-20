@@ -42,6 +42,7 @@
     ```sh
     heroku config:set DATABASE_URL=your_database_url
     heroku config:set YOUTUBE_API_KEY=your_youtube_api_key
+    heroku config:set YOUTUBE_API_URL=https://www.googleapis.com/youtube/v3
     ```
 
 ## Local Deployment
@@ -54,18 +55,4 @@
 
 2. **Install Dependencies**:
     ```sh
-    pip install -r requirements.txt
-    ```
-
-3. **Set Environment Variables**:
-    ```sh
-    export DATABASE_URL='postgresql://username:password@localhost:5432/youtube_analytics'
-    export YOUTUBE_API_KEY='YOUR_API_KEY'
-    ```
-
-4. **Run the Flask Application**:
-    ```sh
-    python -m app.main
-    ```
-
-This document provides instructions for deploying the YouTube Analytics Backend Service on a local machine, Docker, and Heroku. Make sure to replace placeholder values like `your_database_url` and `your_youtube_api_key` with your actual database URL and YouTube API key.
+    pip install -r
